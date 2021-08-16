@@ -1,4 +1,4 @@
-# System.Text.Json.SourceGeneration.NullValidation
+# Json.SourceGeneration.NullValidation
 
 [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/Json.SourceGeneration.NullValidation)](https://www.nuget.org/packages/Json.SourceGeneration.NullValidation)
 

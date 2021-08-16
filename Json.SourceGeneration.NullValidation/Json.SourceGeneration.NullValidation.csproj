@@ -11,12 +11,12 @@
 
   <PropertyGroup>
     <PackageVersion>0.0.0-alpha</PackageVersion>
-    <Title>System.Text.Json.SourceGeneration.NullValidation</Title>
+    <Title>Json.SourceGeneration.NullValidation</Title>
     <PackageId>Json.SourceGeneration.NullValidation</PackageId>
     <Authors>Nathan Povo</Authors>
     <Description>Generate source code to validate properties and fields are not null when serializing and deserializng with System.Text.Json.</Description>
-    <PackageProjectUrl>https://github.com/nathanpovo/System.Text.Json.SourceGeneration.NullValidation</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/nathanpovo/System.Text.Json.SourceGeneration.NullValidation</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/nathanpovo/Json.SourceGeneration.NullValidation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nathanpovo/Json.SourceGeneration.NullValidation</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
