@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Text.Json.SourceGeneration.NullValidation", "System.Text.Json.SourceGeneration.NullValidation\System.Text.Json.SourceGeneration.NullValidation.csproj", "{2874896C-4E78-4740-A891-075A1EF73E49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Text.Json.SourceGeneration.NullValidation.Tests", "System.Text.Json.SourceGeneration.NullValidation.Tests\System.Text.Json.SourceGeneration.NullValidation.Tests.csproj", "{BE5D6900-CC43-4BCD-A318-69297455E4BC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +18,5 @@ Global
 		{2874896C-4E78-4740-A891-075A1EF73E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2874896C-4E78-4740-A891-075A1EF73E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2874896C-4E78-4740-A891-075A1EF73E49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE5D6900-CC43-4BCD-A318-69297455E4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE5D6900-CC43-4BCD-A318-69297455E4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE5D6900-CC43-4BCD-A318-69297455E4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE5D6900-CC43-4BCD-A318-69297455E4BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
