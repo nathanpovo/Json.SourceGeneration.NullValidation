@@ -46,13 +46,10 @@ namespace Json.SourceGeneration.NullValidation.Tests
     ""NullableStructProperty"":null
 }";
 
-        public static TheoryData<string> InvalidJsonData => new TheoryData<string>
+        public static TheoryData<string> InvalidJsonData => new()
         {
             EmptyJson,
-            NullReferenceFieldJson,
-            NullReferencePropertyJson,
-            NullValueFieldJson,
-            NullStructFieldJson
+            NullReferencePropertyJson
         };
     }
 }

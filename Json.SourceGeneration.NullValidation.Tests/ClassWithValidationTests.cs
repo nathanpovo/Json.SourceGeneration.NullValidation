@@ -14,21 +14,7 @@ namespace Json.SourceGeneration.NullValidation.Tests
         {
             Action action = () => JsonSerializer.Deserialize<TypicalClassWithValidation>(json);
 
-            action.Should().NotThrow("validation is not performed during deserialization");
-        }
-
-        [Fact]
-        public void WhenReferencePropertyIsNullShouldThrow()
-        {
-#nullable disable
-            TypicalClassWithValidation typicalClass = new(null, "value");
-#nullable restore
-
-            Func<string> action = () => JsonSerializer.Serialize(typicalClass);
-
-            action
-                .Should()
-                .NotThrow("validation is not performed during serialization");
+            action.Should().Throw<Exception>("validation is performed during deserialization");
         }
     }
 }

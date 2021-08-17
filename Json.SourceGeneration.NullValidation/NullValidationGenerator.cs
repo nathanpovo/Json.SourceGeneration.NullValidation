@@ -64,6 +64,15 @@ public class NullValidationGenerator : ISourceGenerator
 
         string namespaceName = classSymbol.ContainingNamespace.ToDisplayString();
 
+        string accessModifier = classSymbol.DeclaredAccessibility switch
+        {
+            Accessibility.Internal => "internal",
+            Accessibility.Private => "private",
+            Accessibility.Public => "public",
+            Accessibility.Protected => "protected",
+            _ => string.Empty
+        };
+
         // begin building the generated source
         string type = classSymbol.IsRecord ? "record" : "class";
         StringBuilder source = new($@"
@@ -71,7 +80,7 @@ public class NullValidationGenerator : ISourceGenerator
 
 namespace {namespaceName}
 {{
-    internal partial {type} {classSymbol.Name} : {notifySymbol.ToDisplayString()}
+    {accessModifier} partial {type} {classSymbol.Name} : {notifySymbol.ToDisplayString()}
     {{
 ");
 
